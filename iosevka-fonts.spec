@@ -2,13 +2,13 @@
 %global fontconf 62-%{fontname}.conf
 
 Name:           %{fontname}-fonts
-Version:        1.9.5
+Version:        1.11.1
 Release:        1%{?dist}
-Summary:        A programmer's typeface (sans-serif variant)
+Summary:        Spatial efficient monospace font family for programming
 
 License:        SIL OFL 1.1
-URL:            http://be5invis.github.io/Iosevka/
-Source0:        https://github.com/be5invis/Iosevka/releases/download/v%{version}/01.%{fontname}-%{version}.zip
+URL:            http://be5invis.github.io/Iosevka
+Source0:        https://github.com/be5invis/Iosevka/releases/download/v%{version}/01-%{fontname}-%{version}.zip
 Source1:        %{name}-fontconfig.conf
 
 BuildArch:      noarch
@@ -54,5 +54,8 @@ rm -fr %{buildroot}
 
 
 %changelog
+* Mon Feb 27 2017 Jajauma's Packages <jajauma@yandex.ru> - 1.11.1-1
+- Update to latest upstream release
+
 * Sun Nov 06 2016 Jajauma's Packages <jajauma@yandex.ru> - 1.9.5-1
 - Public release
